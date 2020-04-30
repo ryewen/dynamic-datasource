@@ -49,7 +49,7 @@ public class DatasourceConfiguration {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         // 给mybatis指定上面配置好的动态数据源
         sqlSessionFactoryBean.setDataSource(dynamicDatasource());
-        // 自己配置mybatis的话，这个必须要指定mapper位置，在application.yml里配置的不会生效了
+        // 指定mapper位置
         sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:mapper/*.xml"));
         return sqlSessionFactoryBean.getObject();
     }
