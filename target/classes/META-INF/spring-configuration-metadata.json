@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.master",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.loststars.dynamic.datasource.config.DatasourceConfiguration",
+      "sourceMethod": "public javax.sql.DataSource masterDataSource() "
+    },
+    {
+      "name": "spring.datasource.slave",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.loststars.dynamic.datasource.config.DatasourceConfiguration",
+      "sourceMethod": "public javax.sql.DataSource slaveDataSource() "
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
